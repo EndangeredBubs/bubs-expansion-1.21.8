@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "bubsexpansion",
+	"version": "${version}",
+	"name": "Bub's Expansion",
+	"description": "A mod that adds various blocks and items",
+	"authors": [
+		"EndangeredBubs"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/bubsexpansion/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.endangeredbubs.bubsexpansion.BubsExpansion"
+		],
+		"fabric-datagen": [
+			"net.endangeredbubs.bubsexpansion.BubsExpansionDataGenerator"
+		],
+		"client": [
+			"net.endangeredbubs.bubsexpansion.BubsExpansionClient"
+		]
+	},
+	"mixins": [
+		"bubsexpansion.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.8",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
