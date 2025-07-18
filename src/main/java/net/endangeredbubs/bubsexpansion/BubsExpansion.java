@@ -1,5 +1,6 @@
 package net.endangeredbubs.bubsexpansion;
 
+import net.endangeredbubs.bubsexpansion.block.ModBlocks;
 import net.endangeredbubs.bubsexpansion.item.ModItemGroups;
 import net.endangeredbubs.bubsexpansion.item.ModItems;
 import net.fabricmc.api.ModInitializer;
@@ -15,5 +16,6 @@ public class BubsExpansion implements ModInitializer {
 	public void onInitialize() {
 		ModItems.initialize();
 		ModItemGroups.initialize();
+		ModBlocks.initialize();
 	}
 }

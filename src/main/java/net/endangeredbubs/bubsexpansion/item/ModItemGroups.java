@@ -1,6 +1,7 @@
 package net.endangeredbubs.bubsexpansion.item;
 
 import net.endangeredbubs.bubsexpansion.BubsExpansion;
+import net.endangeredbubs.bubsexpansion.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.ItemStack;
@@ -24,6 +25,7 @@ public class ModItemGroups {
 
         ItemGroupEvents.modifyEntriesEvent(BUBS_EXPANSION_ITEM_GROUP_KEY).register(itemGroup -> {
             itemGroup.add(ModItems.WOODEN_GEAR);
+            itemGroup.add(ModBlocks.BROWN_STONE);
         });
     }
 }
