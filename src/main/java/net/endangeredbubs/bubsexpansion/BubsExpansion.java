@@ -14,6 +14,6 @@ public class BubsExpansion implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItems.initialize();
-		ModItemGroups.registerItemGroups();
+		ModItemGroups.initialize();
 	}
 }

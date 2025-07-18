@@ -19,7 +19,7 @@ public class ModItemGroups {
             .displayName(Text.translatable("itemGroup.bubsexpansion"))
             .build();
 
-    public static void registerItemGroups() {
+    public static void initialize() {
         Registry.register(Registries.ITEM_GROUP, BUBS_EXPANSION_ITEM_GROUP_KEY, BUBS_EXPANSION_ITEM_GROUP);
 
         ItemGroupEvents.modifyEntriesEvent(BUBS_EXPANSION_ITEM_GROUP_KEY).register(itemGroup -> {
